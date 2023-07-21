@@ -42,12 +42,17 @@
 }
 </style>
 <script>
+import imgPortrait from "../assets/portrait.png"
+import imgLandscape from "../assets/landscape.png"
+
+
 
 export default {
+
   el: '.A',
   data() {
     return {
-      imageUrl: './src/assets/portrait.png', // Default image URL (you can change it if needed)
+      imageUrl: imgLandscape, // Default image URL
     };
   },
   mounted() {
@@ -78,10 +83,10 @@ export default {
       const ratio = divA.offsetWidth / divA.offsetHeight;
 
       if (ratio >= 1) {
-        this.imageUrl = './src/assets/landscape.png'; // Set the image URL to "paysage.png" if the ratio is greater than or equal to 1
+        this.imageUrl = imgLandscape; // Set the image URL if the ratio is greater than or equal to 1
         console.log(ratio)
       } else {
-        this.imageUrl = './src/assets/portrait.png'; // Set the image URL to "portrait.png" otherwise
+        this.imageUrl = imgPortrait; // Set the image URL to "portrait.png" otherwise
         console.log(ratio)
 
       }

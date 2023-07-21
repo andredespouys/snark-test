@@ -24,6 +24,7 @@ export default {
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
+  <a style="color: blue; text-decoration: underline;" href="https://github.com/andredespouys/snark-test">See Github</a>
   </div>
   <ResizableImage />
   <Commands/>
